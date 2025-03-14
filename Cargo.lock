@@ -64,18 +64,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "affinity"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "763e484feceb7dd021b21c5c6f81aee06b1594a743455ec7efbf72e6355e447b"
-dependencies = [
- "cfg-if 1.0.0",
- "errno",
- "libc",
- "num_cpus",
-]
-
-[[package]]
 name = "agave-geyser-plugin-interface"
 version = "2.1.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4860,7 +4848,6 @@ dependencies = [
 name = "richat"
 version = "2.3.1"
 dependencies = [
- "affinity",
  "anyhow",
  "arrayvec",
  "cargo-lock",
@@ -4992,7 +4979,6 @@ dependencies = [
 name = "richat-plugin-agave"
 version = "2.1.1+solana.2.1.15"
 dependencies = [
- "affinity",
  "agave-geyser-plugin-interface",
  "anyhow",
  "bincode",
@@ -5039,7 +5025,6 @@ dependencies = [
 name = "richat-shared"
 version = "2.5.0"
 dependencies = [
- "affinity",
  "anyhow",
  "base64 0.22.1",
  "bs58",

@@ -219,7 +219,7 @@ impl ConfigAppsWorkers {
     ) -> anyhow::Result<impl std::future::Future<Output = anyhow::Result<()>>> {
         let th = Builder::new().name(name).spawn(move || {
             if let Some(cpus) = cpus {
-                affinity::set_thread_affinity(cpus).expect("failed to set affinity");
+                // affinity::set_thread_affinity(cpus).expect("failed to set affinity");
             }
             spawn_fn(index)
         })?;

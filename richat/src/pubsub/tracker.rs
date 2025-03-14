@@ -302,7 +302,7 @@ pub fn subscriptions_worker(
                 .name(format!("richatPSubWrk{:02}", thread.index()))
                 .spawn(move || {
                     if let Some(cpus) = workers_affinity {
-                        affinity::set_thread_affinity(cpus).expect("failed to set affinity");
+                        // affinity::set_thread_affinity(cpus).expect("failed to set affinity");
                     }
                     thread.run()
                 })?;
