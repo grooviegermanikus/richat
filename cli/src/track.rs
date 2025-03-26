@@ -231,7 +231,7 @@ impl ConfigYellowstoneGrpc {
             transactions.insert(
                 "".to_owned(),
                 SubscribeRequestFilterTransactions {
-                    vote: None,
+                    vote: Some(false),
                     failed: None,
                     signature: None,
                     account_include: vec![],
