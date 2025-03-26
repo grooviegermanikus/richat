@@ -250,7 +250,7 @@ impl ConfigYellowstoneGrpc {
             transactions,
             transactions_status: HashMap::new(),
             blocks: HashMap::new(),
-            blocks_meta: hashmap! { "".to_owned() => SubscribeRequestFilterBlocksMeta {} },
+            blocks_meta: HashMap::new(),
             entry: HashMap::new(),
             commitment: Some(CommitmentLevel::Processed as i32),
             accounts_data_slice: vec![],
